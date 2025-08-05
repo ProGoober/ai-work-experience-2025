@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 from simple_nn import SimpleNet 
 from gradient_check import eval_numerical_gradient 
-from data_utils import get_CIFAR10_data 
+#from data_utils import get_CIFAR10_data 
 from vis_utils import visualize_grid
 
 
@@ -75,6 +75,7 @@ print(correct_scores,'\n')
 # The difference should be very small. (< 1e-7)
 print('Difference between your scores and correct scores:')
 print(np.sum(np.abs(scores - correct_scores)))
+exit(-1)
 
 
 # Forward pass: compute the loss. In the same function, implement the second
